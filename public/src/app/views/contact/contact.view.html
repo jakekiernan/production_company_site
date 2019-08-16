@@ -1,0 +1,6 @@
+<app-header (openNavEvent)="openNav()"
+                  (closeNavEvent)="closeNav()"></app-header>
+<contact></contact>
+<footer></footer>
+<app-nav  [isOpen]="uiState.navIsOpen"
+          (closeNavEvent)="closeNav()"></app-nav>

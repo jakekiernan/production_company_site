@@ -1,0 +1,98 @@
+header {
+  height: 70px;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: 10px;
+}
+
+#light_logo {
+  display: none;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+}
+
+header.scrolled #dark_logo {
+  display: none;
+}
+
+header.scrolled #light_logo {
+  display: inline;
+}
+
+header img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.nav {
+  padding-top: 20px;
+  margin-right: 5%;
+}
+
+.logo {
+  float: left;
+  margin-left: 7%;
+}
+
+.links {
+  float: right;
+  margin-right: 40px;
+}
+
+.links h3 {
+  vertical-align: text-top;
+  font-family: 'gotham_medium';
+  font-size: 15px;
+}
+
+header .links h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .links h3 {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  header {
+    background-color: black;
+  }
+  .logo {
+    margin-left: 10px;
+  }
+  #dark_logo {
+    display: none;
+  }
+  #light_logo {
+    display: inline;
+  }
+  header.scrolled {
+    background-color: black;
+  }
+  i {
+    color: white;
+    float: right;
+    margin: 5px 10px;
+    font-size: 50px;
+  }
+  .links {
+    display: none;
+  }
+}

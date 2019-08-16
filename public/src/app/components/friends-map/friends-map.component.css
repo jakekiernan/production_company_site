@@ -1,0 +1,7 @@
+.wrapper {
+  position: relative;
+}
+
+.wrapper #map_chart {
+  width: 100%;
+}

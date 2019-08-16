@@ -1,0 +1,18 @@
+<div class="manifesto">
+  <div class="header">
+    <div class="flex-item fill"></div>
+    <div class="flex-item line"></div>
+    <h1 class="flex-item title">Manifesto</h1>
+    <div class="flex-item line"></div>
+    <div class="flex-item fill"></div>    
+  </div>
+  <div class="content">
+    <ul>
+      <li *ngFor="let item of manifestoList" (click)="handleActionButtonClick(item.number)">
+        <h1><span class="lil_circle">{{item.number}}</span> <span class="title">{{item.title}}</span></h1>
+        <p *ngIf="manifestoData.number==item.number" class="details" [ngClass]="{'active': isOpen}">{{item.content}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+

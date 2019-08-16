@@ -1,0 +1,9 @@
+<app-header (navScrollEvent)="navScrolled()" 
+                  [isScrolled]="uiState.navIsScrolled" 
+                  (navAtTop)="navAtTop()" 
+                  (openNavEvent)="openNav()"
+                  (closeNavEvent)="closeNav()"></app-header>
+<about></about>
+<footer></footer>
+<app-nav  [isOpen]="uiState.navIsOpen"
+          (closeNavEvent)="closeNav()"></app-nav>

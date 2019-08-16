@@ -1,0 +1,8 @@
+<nav class="app-nav" [ngClass]="{'active': isOpen}" (click)="handleCloseNavClick()">
+  <ul>
+    <li [routerLink]="['/reels']" (click)="handleCloseNavClick()">Reels</li>
+    <li [routerLink]="['/work']" (click)="handleCloseNavClick()">Work</li>
+    <li [routerLink]="['/about']" (click)="handleCloseNavClick()">About</li>
+    <li [routerLink]="['/contact']" (click)="handleCloseNavClick()">Contact</li>
+  </ul>
+</nav>

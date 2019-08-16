@@ -1,0 +1,21 @@
+<header [ngClass]="{'scrolled': isScrolled}">
+  <i class="fa fa-bars" (click)="openNav()"></i>
+  <div class="logo">
+    <img src="../../../assets/logos/logo_dark.png" alt="logo" [routerLink]="['/home']" id="dark_logo" (click)="handleCloseNavClick()">
+    <img src="../../../assets/logos/logo_light.png" alt="logo" [routerLink]="['/home']" id="light_logo" (click)="handleCloseNavClick()">
+  </div>
+  <div class="nav">
+    <div class="links">
+      <h3 [routerLink]="['/contact']">CONTACT</h3> 
+    </div>
+    <div class="links">
+      <h3 [routerLink]="['/about']">ABOUT</h3>
+    </div>
+    <div class="links">
+      <h3 [routerLink]="['/work']">WORK</h3>
+    </div>
+    <div class="links">
+      <h3 [routerLink]="['/reels']">REELS</h3> 
+    </div>
+  </div>
+</header>

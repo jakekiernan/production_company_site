@@ -1,0 +1,13 @@
+<app-header (navScrollEvent)="navScrolled()" [isScrolled]="uiState.navIsScrolled" (navAtTop)="navAtTop()" (openNavEvent)="openNav()"
+  (closeNavEvent)="closeNav()"></app-header>
+<circle-feature [itemList]="teamItemList" (actionButtonEvent)="triggerModal($event)"></circle-feature>
+<!-- <manifesto-feature [manifestoList]="maniItemList"
+                    (actionButtonEvent)="triggerManifestoItem($event)"
+                    [isOpen]="uiState.manifestoIsOpen"
+                    [manifestoData]="uiState.manifestoData"
+                    (manifestoCloseEvent)="closeManifesto()"></manifesto-feature> -->
+<!-- <reel-feature></reel-feature> -->
+<services-feature></services-feature>
+<footer></footer>
+<app-nav [isOpen]="uiState.navIsOpen" (closeNavEvent)="closeNav()"></app-nav>
+<app-modal [isOpen]="uiState.modalIsOpen" [modalData]="uiState.modalData" (modalCloseEvent)="closeModal()"></app-modal>

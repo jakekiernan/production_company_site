@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  margin-top: 80px;
+  width: 100vw;
+  height: calc(100vh - 230px);
+}
+
+.container {
+  width: 100%;
+  padding-top: calc(35vh - 200px);
+}
+
+.text {
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  padding: 25px 25px;
+  margin: auto;
+  text-align: center;
+}
+
+.text h1 {
+  font-family: 'gotham_medium';
+  padding: 20px 0 5px 0;
+  font-size: 22px;
+}
+
+.text h2 {
+  font-size: 16px;
+}
+
+.text .bold {
+  font-family: 'gotham_bold';
+}
+
+.text a {
+  text-decoration: none;
+  color: black;
+}
+
+.phone {
+  cursor: auto;
+}
+
+.pad-top {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 740px) {
+  .wrapper {
+    min-height: 280px;
+  }
+}

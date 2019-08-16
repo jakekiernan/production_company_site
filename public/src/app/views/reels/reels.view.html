@@ -1,0 +1,14 @@
+<app-header (navScrollEvent)="navScrolled()" 
+                  [isScrolled]="uiState.navIsScrolled" 
+                  (navAtTop)="navAtTop()" 
+                  (openNavEvent)="openNav()"
+                  (closeNavEvent)="closeNav()"></app-header>
+<team-reels
+    [teamList]="teamItemList"
+    [roles]="rolesList"
+    (selectRoleKey)="roleSelection($event)"
+    [selectedRole]="uiState.selectedRole"
+    (deselectRole)="clearReelSelection()"></team-reels>
+<footer></footer>
+<app-nav  [isOpen]="uiState.navIsOpen"
+          (closeNavEvent)="closeNav()"></app-nav>

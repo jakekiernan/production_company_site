@@ -1,0 +1,14 @@
+<div class="modal-container" [ngClass]="{'active': isOpen}">
+  <div class="modal-background" (click)="handleModalClose()">
+    <div class="modal_content">
+      <!--<i class="fa fa-times" (click)="handleModalClose()"></i>-->
+      <div class="modal-image">
+        <img src="../../../{{modalData.image}}" alt="routeLink"/> 
+      </div>
+      <div class="modal-text">
+        <h1>{{modalData.name}}</h1>       
+        <p>{{modalData.bio}}</p>   
+      </div>
+    </div>
+  </div>
+</div>

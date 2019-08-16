@@ -1,0 +1,136 @@
+.mobile_wrap {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 80px;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+h4 {
+  text-shadow: 3px 3px 5px black;
+}
+
+#imageOne {
+  background-image: url('../../../assets/work/Suicideyear.png');
+  position: relative;
+  height: calc(100vh - 50px);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageOne .text-box {
+  position: absolute;
+  top: 9%;
+  left: 5%;
+}
+
+#imageTwo {
+  background-image: url('../../../assets/work/SBP.png');
+  position: relative;
+  height: calc(100vh - 50px);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageTwo .text-box {
+  position: absolute;
+  top: 9%;
+  right: 7%;
+}
+
+#imageThree {
+  background-image: url('../../../assets/work/TOV.png');
+  position: relative;
+  height: calc(100vh - 50px);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageThree .text-box {
+  position: absolute;
+  bottom: 12%;
+  right: 7%;
+}
+
+#imageFour {
+  background-image: url('../../../assets/work/VR.png');
+  height: calc(100vh - 50px);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageFour .text-box {
+  position: absolute;
+  bottom: 12%;
+  left: 5%;
+}
+
+#imageFive {
+  background-image: url('../../../assets/work/Toadies.png');
+  height: calc(100vh - 50px);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageFive .text-box {
+  position: absolute;
+  top: 11%;
+  right: 7%;
+}
+
+#imageSix {
+  background-image: url('../../../assets/work/Jardiance.png');
+  position: relative;
+  height: calc(100vh - 50px);
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageSix .text-box {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+}
+
+@media only screen and (max-width: 740px) {
+  .parallax_wrap {
+    display: none;
+  }
+  .mobile_wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  .mobile-image {
+    position: relative;
+  }
+  .mobile-image img {
+    width: 100%;
+  }
+  .mobile-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+}

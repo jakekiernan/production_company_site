@@ -1,0 +1,25 @@
+.footer {
+  height: 100px;
+  width: 100vw;
+  color: black;
+  margin-top: 50px;
+}
+
+.social-footer {
+  margin: auto;
+  width: 180px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.social-footer i {
+  font-size: 40px;
+  margin: 10px;
+  color: black;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 70%;
+  margin-top: 5px;
+}

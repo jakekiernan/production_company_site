@@ -1,0 +1,95 @@
+.modal-container {
+  display: none;
+}
+
+.modal-container.active {
+  display: block;
+}
+
+.modal-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: -webkit-radial-gradient(rgba(0,0,0,0.7) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%);
+  background: -o-radial-gradient(rgba(0,0,0,0.7) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%);
+  background: -moz-radial-gradient(rgba(0,0,0,0.7) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%);
+  background: radial-gradient(rgba(0,0,0,0.7) 0%,rgba(0,0,0,1) 80%,rgba(0,0,0,1) 100%);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal_content {
+  z-index: 3;  
+}
+
+/*.modal-container i {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  color: white;
+  font-size: 200%;
+  z-index: 3;
+}*/
+
+.modal-image img {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  height: 350px;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+.modal-text {
+  position: fixed;
+  top: 460px;
+  left: 50%;
+  width: 70%;
+  color: white;
+  text-align: center;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+.modal-text p {
+  margin: 10px;
+  overflow: scroll;
+  height: 19vh;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 500px) {
+  /*.modal-container i {
+    top: 90px;
+    right: 10px;
+  }*/
+
+  .modal-image img {
+    top: 90px;
+    height: 300px;
+  }
+
+  .modal-text {
+    top: 400px;
+    width: 100%;
+  }
+
+  .modal-text p {
+    margin: 10px 20px;
+  }
+
+  .modal-text p {
+    height: 30vh;
+  }
+
+}

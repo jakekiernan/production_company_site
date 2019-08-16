@@ -1,0 +1,42 @@
+.app-nav {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin-left: -100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 80px;
+  -webkit-transition: margin 500ms;
+  transition: margin 500ms;
+  z-index: 3;
+}
+
+.app-nav.active {
+  margin-left: 0;
+  box-shadow: 0 0.3rem 0.3rem #222;
+  -webkit-transition: margin 500ms;
+  transition: margin 500ms;
+}
+
+.app-nav ul {
+  list-style: none;
+  margin-left: 15px;
+}
+
+.app-nav li {
+  color: white;
+  padding: 1rem;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close button {
+  color: white;
+  font-size: 1.5rem;
+  background: none;
+}

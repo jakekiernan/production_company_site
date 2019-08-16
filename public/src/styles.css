@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'gotham_medium';
+  src: url('./assets/fonts/gotham-medium1-webfont.woff2') format('woff2'),
+    url('./assets/fonts/gotham-medium1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham_bold';
+  src: url('./assets/fonts/gotham-bold1-webfont.woff2') format('woff2'),
+    url('./assets/fonts/gotham-bold1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham_light';
+  src: url('./assets/fonts/gotham-light1-webfont.woff2') format('woff2'),
+    url('./assets/fonts/gotham-light1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'gotham_light', 'Raleway', sans-serif;
+}

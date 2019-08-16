@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="titleWrapper">
+    <h1 *ngIf="selectedRole.role">{{selectedRole.role}}s</h1>
+  </div>
+  <div class="btn-wrapper">
+    <div class="btn-center">
+      <button (click)="resetTeam()">All</button>
+      <button *ngFor="let roleTypes of roles" (click)="select(roleTypes.key)">{{roleTypes.role}}s</button>
+    </div>
+  </div>
+  <ul>
+    <div *ngFor="let item of teamList">
+      <li class="container" *ngIf="!selectedRole.role || item.role.includes(selectedRole.role)">
+        <div class="reel">
+          <iframe [src]="item.reel|safe" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="description">
+          <h1>{{item.name}}</h1>
+          <h2>{{item.role.join(', ')}}</h2>
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>

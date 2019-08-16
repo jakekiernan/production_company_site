@@ -1,0 +1,6 @@
+<div class="wrapper">
+  <div class="container" *ngFor="let item of itemList">
+    <img src="../../../{{item.image}}" class="circle" id="circle" (click)="handleActionButtonClick(item.key)" id="item.key"/>
+    <div class="text" (click)="handleActionButtonClick(item.key)">{{item.name}}</div>
+  </div>
+</div>
